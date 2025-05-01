@@ -9,7 +9,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding-top: 100px;
 }
 
 .container {
@@ -28,7 +27,6 @@ body {
     text-align: center;
     position: relative;
     height: 200px;
-    background-image: url(/public/images/imagetodotodo.jpg);
     background-size: cover;
     background-position: center bottom;
 }
