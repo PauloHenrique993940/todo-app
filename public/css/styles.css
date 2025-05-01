@@ -1,0 +1,142 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('/public/images/fundo-app-lista-de-tarefa.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #e0e8e5;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    background-image: url(/public/images/imagetodotodo.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.header h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.input-container {
+    display: flex;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.input-container input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.input-container button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.input-container button:hover {
+    background-color: #4cae4c;
+}
+
+.task-list {
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-item label {
+    flex-grow: 1;
+    font-size: 1em;
+    color: #333;
+    cursor: pointer;
+}
+
+.task-item.completed label {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-item button {
+    background: none;
+    border: none;
+    color: #d9534f;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.task-item button:hover {
+    color: #c9302c;
+}
+
+.footer {
+    padding: 15px;
+    text-align: left;
+    color: #777;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer button {
+    background: none;
+    border: none;
+    color: #01040e;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.footer button:hover {
+    color: #0056b3;
+}

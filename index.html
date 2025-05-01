@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do List</h1>
+            <div class="input-container">
+                <input type="text" id="newTask" placeholder="Insira o todo aqui...">
+                <button onclick="addTask()">Adicionar</button>
+            </div>
+        </div>
+        <ul class="task-list" id="taskList">
+            <li class="task-item">
+                <input type="checkbox" checked>
+                <label>Ler 10 páginas de um livro</label>
+            </li>
+            <li class="task-item">
+                <input type="checkbox">
+                <label>Meditar</label>
+            </li>
+            <li class="task-item">
+                <input type="checkbox">
+                <label>Editar 2 vídeos</label>
+            </li>
+            <li class="task-item">
+                <input type="checkbox">
+                <label>Criar portfólio</label>
+            </li>
+            <li class="task-item">
+                <input type="checkbox">
+                <label>Academia</label>
+            </li>
+        </ul>
+        <div class="footer">
+            <span>4 itens restantes</span>
+            <div>
+                <button>Todos</button>
+                <button>Ativos</button>
+                <button>Concluídos</button>
+                <button>Limpar Concluídos</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/public/js/script.js"></script>
+
+</body>
+</html>
